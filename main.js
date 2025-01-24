@@ -1,22 +1,30 @@
-console.log("Connected!")
-// YOU WILL MODIFY THIS FUNCTION TO GET THE PROGRAM TO WORK
+const textInput = document.querySelector("#textInput");
+const submitButton = document.querySelector("#submitButton");
+
+submitButton.addEventListener("click", () => {
+  const inputValue = textInput.value;
+  wordCounter(inputValue);
+});
+
 const wordCounter = (value) => {
-  // Type into the input and press submit, you will see the value you entered in your console
   console.log(value);
 
-  if (value) {
-    // COMPLETE THE LOGIC 
-    wordCount.innerHTML = `Word Count: 0`; 
-  } else {
-    // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+  if (value.trim()) {
+    const wordArray = value.trim().split(/\s+/);
+    const count = wordArray.length;
+    wordCount.innerHTML = `Word Count: ${count}`;
+    error.innerHTML = "";
   }
-}
+};
+
+const drkBtn = document.querySelector("#bg-switch")
+const bod = document.querySelector("body")
 
 // OPTIONAL CHALLENGE
-const toggleMode = (btnText) => {
-  // complete the function
-}
+
+drkBtn.addEventListener("click", () => {
+  bod.classList.toggle("dark");
+});
 
 // ************************************************ //
 // **** DO NOT MODIFY THE CODE BELOW THIS LINE **** //

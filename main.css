@@ -1,0 +1,37 @@
+body {
+  margin:0 auto;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  color: blue;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainbtn {
+  background-color: green;
+  color: aliceblue;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+#bg-switch {
+  margin: 10px;
+  float: right;
+  background-color: rgb(35, 35, 35);
+  border-radius: 4px;
+  border: none;
+  padding: 5px 10px;
+  color: aliceblue;
+}
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
